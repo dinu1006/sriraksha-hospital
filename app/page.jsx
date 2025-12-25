@@ -20,8 +20,8 @@ export default function Home() {
       <section>
         <h3 className="section-title">About Sri Raksha Hospital</h3>
         <p>
-          Sri Raksha Hospital is committed to delivering world-class healthcare
-          with modern infrastructure, experienced doctors, and patient-centric care.
+          Sri Raksha Hospital provides ethical, affordable, and advanced
+          healthcare with modern infrastructure and experienced doctors.
         </p>
       </section>
 
@@ -33,7 +33,6 @@ export default function Home() {
           <div className="card">Gynecology</div>
           <div className="card">Pediatrics</div>
           <div className="card">Emergency Care</div>
-          <div className="card">Diagnostics</div>
         </div>
       </section>
 
