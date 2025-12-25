@@ -258,3 +258,66 @@ section:not(.hero) {
     rgba(255,255,255,0.15),
     transparent 70%);
 }
+/* ================= WHY SRI RAKSHA ================= */
+
+.why-hospital {
+  background: #ffffff;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.why-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #08305a;
+}
+
+.why-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.why-content ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.why-content li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.why-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #0a3c78;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-image {
+    order: -1;
+  }
+}
