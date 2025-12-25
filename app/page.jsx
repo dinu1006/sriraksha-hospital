@@ -1,92 +1,112 @@
-export default function HomePage() {
+export default function Home() {
   return (
     <>
+
       {/* HERO SECTION */}
-      <section
-        style={{
-          background:
-            "linear-gradient(rgba(11,94,215,0.8), rgba(11,94,215,0.8)), url('/hospital/building.jpg') center/cover",
-          color: "white",
-          padding: "120px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "48px", marginBottom: "15px" }}>
-          Sri Raksha Hospital
-        </h1>
-        <p style={{ fontSize: "20px", maxWidth: "800px", margin: "auto" }}>
-          Ethical, Affordable & Advanced Healthcare with Compassion
+      <section className="hero">
+        <h1>Advanced Healthcare with Compassion</h1>
+        <p>
+          Ethical, affordable, and advanced medical care for your family.
         </p>
+        <a href="tel:+919701599982" className="hero-btn">
+          Call +91 97015 99982
+        </a>
       </section>
 
       {/* ABOUT */}
-      <section className="container">
-        <h2 className="section-title">About Sri Raksha Hospital</h2>
-        <p style={{ textAlign: "center", maxWidth: "900px", margin: "auto" }}>
-          Sri Raksha Hospital is committed to delivering ethical, affordable, and
-          advanced healthcare with modern infrastructure and experienced
-          doctors. We focus on patient-centric treatment with compassion and
-          integrity.
+      <section id="about" className="section">
+        <h2>About Sri Raksha Hospital</h2>
+        <p>
+          Sri Raksha Hospital is committed to providing comprehensive
+          healthcare with experienced doctors, modern facilities,
+          and patient-centric care.
         </p>
       </section>
 
-      {/* DEPARTMENTS */}
-      <section className="container">
-        <h2 className="section-title">Our Departments</h2>
+      {/* SERVICES */}
+      <section id="services" className="section gray">
+        <h2>Our Services</h2>
 
-        <div className="card-grid">
-          {[
-            "General Medicine",
-            "Diabetology",
-            "Gynecology",
-            "Pediatrics",
-            "Emergency Care",
-            "Diagnostics",
-          ].map((dept) => (
-            <div className="card" key={dept}>
-              <h3>{dept}</h3>
-              <p>
-                Comprehensive care delivered by experienced specialists using
-                modern medical facilities.
-              </p>
-            </div>
-          ))}
+        <div className="services-grid">
+
+          <div className="service-card">
+            <h3>General & Emergency Care</h3>
+            <ul>
+              <li>Diabetes</li>
+              <li>Hypertension</li>
+              <li>Thyroid Disorders</li>
+              <li>Poisoning Cases</li>
+              <li>Snake Bite & Scorpion Sting</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Respiratory Care</h3>
+            <ul>
+              <li>Asthma & COPD</li>
+              <li>Respiratory Illness</li>
+              <li>Tuberculosis</li>
+              <li>Pleural Effusion</li>
+              <li>Pneumonia</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Kidney & Critical Care</h3>
+            <ul>
+              <li>AKI (Acute Kidney Injury)</li>
+              <li>CKD</li>
+              <li>Kidney Related Issues</li>
+              <li>Chest Pain</li>
+              <li>APD</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Cardiac & Neuro Care</h3>
+            <ul>
+              <li>Myocardial Infarction</li>
+              <li>Stroke / CVA</li>
+              <li>Paralysis</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Maternity & Gynecology</h3>
+            <ul>
+              <li>Infertility</li>
+              <li>PCOS</li>
+              <li>Endometriosis</li>
+              <li>Normal Delivery & VBAC</li>
+              <li>LSCS & High-Risk Pregnancies</li>
+              <li>Preeclampsia & Eclampsia</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Gynec Procedures & Infections</h3>
+            <ul>
+              <li>Tubectomy</li>
+              <li>Hysterectomy</li>
+              <li>NDVH</li>
+              <li>White & Vaginal Discharges</li>
+              <li>Candidiasis</li>
+              <li>Cervicitis</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
-      {/* DOCTORS */}
-      <section className="container">
-        <h2 className="section-title">Our Doctors</h2>
-
-        <div className="card-grid">
-          <div className="card">
-            <img src="/doctors/dr-vijay.jpg" alt="Dr. Kavati Vijay" />
-            <h3>Dr. Kavati Vijay</h3>
-            <p>MD – General Medicine</p>
-            <p>Consultant Physician & Diabetologist</p>
-          </div>
-
-          <div className="card">
-            <img src="/doctors/dr-divya.jpg" alt="Dr. Divya Chandra" />
-            <h3>Dr. Divya Chandra</h3>
-            <p>MS – Obstetrics & Gynecology</p>
-            <p>Infertility Specialist</p>
-          </div>
-        </div>
+      {/* CONTACT */}
+      <section id="contact" className="section contact">
+        <h2>Contact Us</h2>
+        <p>For appointments and emergencies</p>
+        <a href="tel:+919701599982" className="contact-btn">
+          📞 +91 97015 99982
+        </a>
       </section>
 
-      {/* FOOTER */}
-      <footer
-        style={{
-          background: "#0b5ed7",
-          color: "white",
-          padding: "30px",
-          textAlign: "center",
-          marginTop: "60px",
-        }}
-      >
-        © 2025 Sri Raksha Hospital. All Rights Reserved.
-      </footer>
     </>
   );
 }
