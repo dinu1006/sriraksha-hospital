@@ -321,3 +321,35 @@ section:not(.hero) {
     order: -1;
   }
 }
+/* ================= TRUST STRIP ================= */
+
+.trust-strip {
+  background: linear-gradient(135deg, #08305a, #0a3c78);
+  color: #ffffff;
+}
+
+.trust-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.trust-item h3 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.trust-item p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .trust-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
