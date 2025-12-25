@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sri Raksha Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0b5ed7;
+  color: white;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 26px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(rgba(11,94,215,0.8), rgba(11,94,215,0.8)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 14px 35px;
+  font-size: 18px;
+  background: #ffc107;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 60px;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h3 {
+  font-size: 32px;
+  color: #0b5ed7;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-box {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service-box h4 {
+  margin-bottom: 15px;
+  color: #0b5ed7;
+}
+
+/* DOCTORS */
+.doctors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.doctor {
+  background: #f8f9fa;
+  padding: 25px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.doctor h4 {
+  margin-top: 15px;
+  color: #0b5ed7;
+}
+
+/* CONTACT */
+.contact {
+  background: #0b5ed7;
+  color: white;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Sri Raksha Hospital</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Doctors</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Advanced Care for Every Life</h2>
+  <p>Trusted healthcare with modern facilities, expert doctors, and compassionate care.</p>
+  <button>Book Appointment</button>
+</div>
+
+<section>
+  <div class="section-title">
+    <h3>Our Services</h3>
+  </div>
+  <div class="services">
+    <div class="service-box">
+      <h4>General Medicine</h4>
+      <p>Comprehensive diagnosis and treatment.</p>
+    </div>
+    <div class="service-box">
+      <h4>Emergency Care</h4>
+      <p>24/7 emergency medical services.</p>
+    </div>
+    <div class="service-box">
+      <h4>Diagnostics</h4>
+      <p>Advanced lab and imaging facilities.</p>
+    </div>
+    <div class="service-box">
+      <h4>Pharmacy</h4>
+      <p>In-house pharmacy for patient convenience.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h3>Our Doctors</h3>
+  </div>
+  <div class="doctors">
+    <div class="doctor">
+      <h4>Dr. A. Kumar</h4>
+      <p>General Physician</p>
+    </div>
+    <div class="doctor">
+      <h4>Dr. S. Reddy</h4>
+      <p>Consultant Surgeon</p>
+    </div>
+    <div class="doctor">
+      <h4>Dr. P. Meena</h4>
+      <p>Gynecologist</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h3>Contact Us</h3>
+  <p>📍 Sri Raksha Hospital, Telangana</p>
+  <p>📞 +91 9XXXXXXXXX</p>
+  <p>🕒 24/7 Emergency Services</p>
+</section>
+
+<footer>
+  <p>© 2025 Sri Raksha Hospital. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
