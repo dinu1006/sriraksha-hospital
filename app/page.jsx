@@ -66,4 +66,110 @@ export default function HomePage() {
           </div>
 
           <div className="dept-card" data-animate>
-            <span className="dept-icon">
+            <span className="dept-icon">👩‍⚕️</span>
+            <h3>Gynecology</h3>
+            <p>PCOS, Infertility, Endometriosis</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SERVICES ================= */}
+      <section id="services" className="services">
+        <h2 className="section-title" data-animate>
+          Our Medical Services
+        </h2>
+
+        <div className="services-grid">
+          <div className="service-card" data-animate>
+            <h3>General & Emergency Medicine</h3>
+            <ul>
+              <li>Diabetes</li>
+              <li>Hypertension</li>
+              <li>Thyroid Disorders</li>
+              <li>Poisoning Cases</li>
+              <li>Snake Bite & Scorpion Sting</li>
+            </ul>
+          </div>
+
+          <div className="service-card" data-animate>
+            <h3>Respiratory Care</h3>
+            <ul>
+              <li>Asthma</li>
+              <li>COPD</li>
+              <li>Tuberculosis</li>
+              <li>Pleural Effusion</li>
+              <li>Pneumonia</li>
+            </ul>
+          </div>
+
+          <div className="service-card" data-animate>
+            <h3>Kidney & Critical Care</h3>
+            <ul>
+              <li>AKI (Acute Kidney Injury)</li>
+              <li>CKD</li>
+              <li>Kidney Related Issues</li>
+            </ul>
+          </div>
+
+          <div className="service-card" data-animate>
+            <h3>Cardiac & Neuro Care</h3>
+            <ul>
+              <li>Chest Pain</li>
+              <li>Myocardial Infarction</li>
+              <li>Stroke / CVA</li>
+              <li>Paralysis</li>
+            </ul>
+          </div>
+
+          <div className="service-card" data-animate>
+            <h3>Maternity & Gynecology</h3>
+            <ul>
+              <li>Infertility</li>
+              <li>PCOS</li>
+              <li>Endometriosis</li>
+              <li>Normal Delivery & VBAC</li>
+              <li>LSCS & High Risk Pregnancy</li>
+              <li>Preeclampsia & Eclampsia</li>
+            </ul>
+          </div>
+
+          <div className="service-card" data-animate>
+            <h3>Gynec Procedures & Infections</h3>
+            <ul>
+              <li>Tubectomy</li>
+              <li>Hysterectomy</li>
+              <li>NDVH</li>
+              <li>White Discharge Issues</li>
+              <li>Candidiasis</li>
+              <li>Cervicitis</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="cta-section" data-animate>
+        <h2>Need Medical Assistance?</h2>
+        <p>Call us now for appointments and emergency care</p>
+        <a href="tel:+919701599982" className="cta-btn">
+          📞 +91 97015 99982
+        </a>
+      </section>
+
+      {/* ================= STICKY BUTTONS ================= */}
+      <div className="sticky-buttons">
+        <a href="tel:+919701599982" className="sticky-call">
+          📞
+        </a>
+        <a
+          href="https://wa.me/919701599982"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sticky-whatsapp"
+        >
+          💬
+        </a>
+      </div>
+    </>
+  );
+}
