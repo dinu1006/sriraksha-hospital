@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   height: 90vh;
-  background-image: url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+  background-image: url("/hospital.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -70,7 +72,7 @@ html {
   color: white;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 section:not(.hero) {
   padding: 90px 20px;
 }
@@ -91,179 +93,7 @@ section:not(.hero) {
   border-radius: 2px;
 }
 
-/* DEPARTMENTS */
-.departments {
-  background: #f6f9fc;
-}
-
-.departments-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.dept-card {
-  background: white;
-  padding: 35px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.dept-icon {
-  font-size: 46px;
-  margin-bottom: 15px;
-}
-
-/* SERVICES */
-.services-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.service-card {
-  background: #f9fbfe;
-  padding: 30px;
-  border-radius: 12px;
-  border-left: 5px solid #0a3c78;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-}
-
-.service-card ul {
-  list-style: none;
-}
-
-.service-card li {
-  margin-bottom: 8px;
-}
-
-.service-card li::before {
-  content: "✔ ";
-  color: #198754;
-}
-
-/* CTA */
-.cta-section {
-  background: linear-gradient(135deg, #08305a, #0a3c78);
-  color: white;
-  text-align: center;
-}
-
-.cta-btn {
-  background: white;
-  color: #08305a;
-  padding: 14px 34px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-/* STICKY BUTTONS */
-.sticky-buttons {
-  position: fixed;
-  right: 18px;
-  bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.sticky-call,
-.sticky-whatsapp {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-}
-
-.sticky-call {
-  background: #0a3c78;
-}
-
-.sticky-whatsapp {
-  background: #25d366;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero-inner h1 {
-    font-size: 36px;
-  }
-}
-/* ================= SMOOTH FLOATING & MOTION ================= */
-
-/* Parallax Hero */
-.hero {
-  background-attachment: fixed;
-}
-
-/* Floating depth */
-.dept-card,
-.service-card {
-  background: linear-gradient(180deg, #ffffff, #f4f8ff);
-  transform: translateY(0);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.dept-card:hover,
-.service-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.18);
-}
-
-/* Scroll animation base */
-[data-animate] {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-}
-
-/* When visible */
-[data-animate].show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Section depth */
-.departments {
-  background: linear-gradient(to bottom, #f6f9fc, #ffffff);
-}
-
-.services {
-  background: linear-gradient(to bottom, #ffffff, #f3f7ff);
-}
-
-/* CTA depth */
-.cta-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top,
-    rgba(255,255,255,0.15),
-    transparent 70%);
-}
-/* ================= WHY SRI RAKSHA ================= */
-
-.why-hospital {
-  background: #ffffff;
-}
-
+/* ================= WHY SECTION ================= */
 .why-container {
   max-width: 1200px;
   margin: auto;
@@ -297,35 +127,22 @@ section:not(.hero) {
 }
 
 .why-content li {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .why-btn {
-  display: inline-block;
   padding: 14px 34px;
   background: #0a3c78;
-  color: #ffffff;
+  color: white;
   border-radius: 30px;
-  font-weight: 600;
   text-decoration: none;
+  font-weight: 600;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .why-container {
-    grid-template-columns: 1fr;
-  }
-
-  .why-image {
-    order: -1;
-  }
-}
 /* ================= TRUST STRIP ================= */
-
 .trust-strip {
   background: linear-gradient(135deg, #08305a, #0a3c78);
-  color: #ffffff;
+  color: white;
 }
 
 .trust-container {
@@ -339,22 +156,51 @@ section:not(.hero) {
 
 .trust-item h3 {
   font-size: 38px;
-  margin-bottom: 8px;
 }
 
-.trust-item p {
-  font-size: 16px;
-  opacity: 0.9;
+/* ================= DEPARTMENTS ================= */
+.departments {
+  background: #f6f9fc;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-  .trust-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.departments-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
+
+.dept-card {
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.dept-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ================= SERVICES ================= */
+.services-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #f9fbfe;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 5px solid #0a3c78;
+}
+
 /* ================= DOCTORS ================= */
-
 .doctors {
   background: #f6f9fc;
 }
@@ -368,40 +214,82 @@ section:not(.hero) {
 }
 
 .doctor-card {
-  background: #ffffff;
+  background: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.doctor-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+  max-width: 320px;
+  margin: auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
 .doctor-card img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
+  height: 220px;
+  object-fit: contain;
+  background: #f6f9fc;
+  padding: 12px;
 }
 
-/* NAME AREA (THIS FIXES YOUR PROBLEM) */
 .doctor-info {
-  background: #ffffff;
   padding: 20px;
   text-align: center;
 }
 
 .doctor-info h3 {
   font-size: 20px;
-  font-weight: 700;
   color: #08305a;
-  margin-bottom: 6px;
 }
 
 .doctor-info p {
   font-size: 15px;
   color: #555;
+}
+
+/* ================= CTA ================= */
+.cta-section {
+  background: linear-gradient(135deg, #08305a, #0a3c78);
+  color: white;
+  text-align: center;
+}
+
+.cta-btn {
+  background: white;
+  color: #08305a;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ================= STICKY ================= */
+.sticky-buttons {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sticky-call,
+.sticky-whatsapp {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.sticky-call { background: #0a3c78; }
+.sticky-whatsapp { background: #25d366; }
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+  .why-container { grid-template-columns: 1fr; }
+  .trust-container { grid-template-columns: repeat(2, 1fr); }
+  .hero-inner h1 { font-size: 36px; }
 }
