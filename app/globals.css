@@ -265,3 +265,52 @@ body {
     padding: 60px 15px;
   }
 }
+/* STICKY CALL & WHATSAPP */
+.sticky-buttons {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.sticky-call,
+.sticky-whatsapp {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* CALL */
+.sticky-call {
+  background: #0a3c78;
+}
+
+/* WHATSAPP */
+.sticky-whatsapp {
+  background: #25d366;
+}
+
+.sticky-call:hover,
+.sticky-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* MOBILE POSITION TWEAK */
+@media (max-width: 768px) {
+  .sticky-buttons {
+    right: 14px;
+    bottom: 16px;
+  }
+}
