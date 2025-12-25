@@ -214,31 +214,24 @@ export default function HomePage() {
   <div className="doctors-grid">
 
     <div className="doctor-card" data-animate>
-      <img src="/doctors/doctor1.jpg" alt="Dr. Vijay Kumar" />
+      <img src="/doctors/doctor1.jpg" alt="Doctor 1" />
       <div className="doctor-info">
-        <h3>Dr. Vijay Kumar</h3>
-        <p>MD (General Medicine)</p>
+        <h3>Dr. NAME 1</h3>
+        <p>Specialization</p>
       </div>
     </div>
 
     <div className="doctor-card" data-animate>
-      <img src="/doctors/doctor2.jpg" alt="Dr. Divya Reddy" />
+      <img src="/doctors/doctor2.jpg" alt="Doctor 2" />
       <div className="doctor-info">
-        <h3>Dr. Divya Reddy</h3>
-        <p>MS (Obstetrics & Gynecology)</p>
-      </div>
-    </div>
-
-    <div className="doctor-card" data-animate>
-      <img src="/doctors/doctor3.jpg" alt="Dr. Anil Rao" />
-      <div className="doctor-info">
-        <h3>Dr. Anil Rao</h3>
-        <p>DM (Cardiology)</p>
+        <h3>Dr. NAME 2</h3>
+        <p>Specialization</p>
       </div>
     </div>
 
   </div>
 </section>
+
 
       {/* ================= CTA ================= */}
       <section className="cta-section" data-animate>
