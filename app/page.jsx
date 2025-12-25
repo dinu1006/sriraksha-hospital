@@ -27,6 +27,39 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+{/* ================= WHY SRI RAKSHA ================= */}
+<section className="why-hospital">
+  <div className="why-container" data-animate>
+    
+    {/* IMAGE */}
+    <div className="why-image">
+      <img src="/hospital.jpg" alt="Sri Raksha Hospital Building" />
+    </div>
+
+    {/* CONTENT */}
+    <div className="why-content">
+      <h2>Why Sri Raksha Hospital</h2>
+
+      <p>
+        Sri Raksha Hospital is committed to providing ethical, affordable,
+        and advanced medical care with a patient-first approach.
+        Our focus is on quality treatment, timely diagnosis, and compassionate care.
+      </p>
+
+      <ul>
+        <li>✔ 24/7 Emergency & Critical Care</li>
+        <li>✔ Experienced & Dedicated Medical Team</li>
+        <li>✔ Modern Facilities & Accurate Diagnosis</li>
+        <li>✔ Personalized Care for Every Patient</li>
+      </ul>
+
+      <a href="tel:+919701599982" className="why-btn">
+        Call Now
+      </a>
+    </div>
+
+  </div>
+</section>
 
       {/* ================= DEPARTMENTS ================= */}
       <section className="departments">
