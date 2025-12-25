@@ -12,6 +12,48 @@ export default function Home() {
           Call +91 97015 99982
         </a>
       </section>
+{/* DEPARTMENTS SECTION */}
+<section className="departments">
+  <h2 className="section-title">Our Specialities</h2>
+
+  <div className="departments-grid">
+    <div className="dept-card">
+      <span className="dept-icon">🩺</span>
+      <h3>General Medicine</h3>
+      <p>Diabetes, Hypertension, Thyroid Disorders</p>
+    </div>
+
+    <div className="dept-card">
+      <span className="dept-icon">🫁</span>
+      <h3>Respiratory Care</h3>
+      <p>Asthma, COPD, TB, Pneumonia</p>
+    </div>
+
+    <div className="dept-card">
+      <span className="dept-icon">🫀</span>
+      <h3>Cardiac Care</h3>
+      <p>Chest Pain, Heart Attack, Stroke</p>
+    </div>
+
+    <div className="dept-card">
+      <span className="dept-icon">🩸</span>
+      <h3>Nephrology</h3>
+      <p>AKI, CKD & Kidney Disorders</p>
+    </div>
+
+    <div className="dept-card">
+      <span className="dept-icon">🤰</span>
+      <h3>Maternity Care</h3>
+      <p>Normal Delivery, VBAC, High Risk Pregnancy</p>
+    </div>
+
+    <div className="dept-card">
+      <span className="dept-icon">👩‍⚕️</span>
+      <h3>Gynecology</h3>
+      <p>PCOS, Infertility, Hysterectomy</p>
+    </div>
+  </div>
+</section>
 
       {/* ABOUT */}
       <section id="about" className="section">
