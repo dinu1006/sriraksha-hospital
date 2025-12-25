@@ -1,46 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sri Raksha Hospital</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f9ff;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<title>Sri Raksha Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+    background: #f6f9fc;
+}
+
+/* HEADER */
+header {
+    background: #0b5ed7;
+    color: white;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(11,94,215,0.85), rgba(11,94,215,0.85)),
+                url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3") center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 16px;
+    background: white;
+    color: #0b5ed7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* SECTION */
+section {
+    padding: 70px 60px;
+    background: white;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0b5ed7;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.service-box {
+    background: #f1f5fb;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.service-box h4 {
+    color: #0b5ed7;
+    margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+    max-width: 900px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* DOCTORS */
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 25px;
+}
+
+.doctor {
+    background: #f1f5fb;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* CTA */
+.cta {
+    background: #0b5ed7;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h3 {
+    color: white;
+}
+
+.cta button {
+    margin-top: 20px;
+    padding: 14px 32px;
+    font-size: 16px;
+    background: white;
+    color: #0b5ed7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #1c1c1c;
+    color: #aaa;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
     header {
-      background: #0b5ed7;
-      color: white;
-      padding: 40px 20px;
+        flex-direction: column;
     }
-    section {
-      padding: 40px 20px;
+    nav {
+        margin-top: 10px;
     }
-    footer {
-      background: #222;
-      color: #aaa;
-      padding: 20px;
-    }
-  </style>
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Sri Raksha Hospital</h1>
-  <p>Caring for Life, Caring for You</p>
+    <h1>Sri Raksha Hospital</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Doctors</a>
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
+<section class="hero">
+    <h2>Advanced Care. Trusted Healing.</h2>
+    <p>Delivering world-class healthcare with compassion, technology, and experienced medical professionals.</p>
+    <button>Book Appointment</button>
+</section>
+
 <section>
-  <h2>Welcome</h2>
-  <p>This website is successfully deployed on Vercel.</p>
-  <p>If you see this page, everything is WORKING ✅</p>
+    <h3>Our Services</h3>
+    <div class="services">
+        <div class="service-box">
+            <h4>General Medicine</h4>
+            <p>Comprehensive diagnosis and treatment for all common health conditions.</p>
+        </div>
+        <div class="service-box">
+            <h4>Cardiology</h4>
+            <p>Advanced heart care with modern diagnostic and treatment facilities.</p>
+        </div>
+        <div class="service-box">
+            <h4>Orthopaedics</h4>
+            <p>Expert care for bones, joints, spine, and sports injuries.</p>
+        </div>
+        <div class="service-box">
+            <h4>Emergency Care</h4>
+            <p>24/7 emergency services with rapid response and critical care.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>About Sri Raksha Hospital</h3>
+    <div class="about">
+        Sri Raksha Hospital is committed to providing ethical, affordable, and advanced healthcare services. 
+        With state-of-the-art infrastructure and experienced doctors, we ensure patient safety, comfort, 
+        and clinical excellence in every treatment.
+    </div>
+</section>
+
+<section>
+    <h3>Our Doctors</h3>
+    <div class="doctors">
+        <div class="doctor">
+            <h4>Dr. A. Ramesh</h4>
+            <p>MD – General Medicine</p>
+        </div>
+        <div class="doctor">
+            <h4>Dr. S. Kiran</h4>
+            <p>DM – Cardiology</p>
+        </div>
+        <div class="doctor">
+            <h4>Dr. P. Suresh</h4>
+            <p>MS – Orthopaedics</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h3>Need Medical Assistance?</h3>
+    <p>Call us or book an appointment today</p>
+    <button>Call Now</button>
 </section>
 
 <footer>
-  <p>© 2025 Sri Raksha Hospital</p>
+    © 2025 Sri Raksha Hospital | All Rights Reserved
 </footer>
 
 </body>
