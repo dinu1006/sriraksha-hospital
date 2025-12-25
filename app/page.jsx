@@ -205,6 +205,40 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+{/* ================= DOCTORS ================= */}
+<section className="doctors">
+  <h2 className="section-title" data-animate>
+    Our Doctors
+  </h2>
+
+  <div className="doctors-grid">
+
+    <div className="doctor-card" data-animate>
+      <img src="/doctors/doctor1.jpg" alt="Dr. Vijay Kumar" />
+      <div className="doctor-info">
+        <h3>Dr. Vijay Kumar</h3>
+        <p>MD (General Medicine)</p>
+      </div>
+    </div>
+
+    <div className="doctor-card" data-animate>
+      <img src="/doctors/doctor2.jpg" alt="Dr. Divya Reddy" />
+      <div className="doctor-info">
+        <h3>Dr. Divya Reddy</h3>
+        <p>MS (Obstetrics & Gynecology)</p>
+      </div>
+    </div>
+
+    <div className="doctor-card" data-animate>
+      <img src="/doctors/doctor3.jpg" alt="Dr. Anil Rao" />
+      <div className="doctor-info">
+        <h3>Dr. Anil Rao</h3>
+        <p>DM (Cardiology)</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* ================= CTA ================= */}
       <section className="cta-section" data-animate>
