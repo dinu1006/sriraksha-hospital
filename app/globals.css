@@ -152,3 +152,61 @@ body {
   text-align: center;
   padding: 15px;
 }
+/* DEPARTMENTS */
+.departments {
+  padding: 80px 20px;
+  background: #f6f9fc;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 34px;
+  margin-bottom: 50px;
+  color: #08305a;
+}
+
+.departments-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.dept-card {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dept-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.dept-icon {
+  font-size: 46px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.dept-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0a3c78;
+}
+
+.dept-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+}
