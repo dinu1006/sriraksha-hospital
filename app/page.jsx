@@ -154,3 +154,23 @@ export default function HomePage() {
     </>
   );
 }
+{/* ================= STICKY BUTTONS ================= */}
+<div className="sticky-buttons">
+  <a
+    href="tel:+919701599982"
+    className="sticky-call"
+    aria-label="Call Sri Raksha Hospital"
+  >
+    📞
+  </a>
+
+  <a
+    href="https://wa.me/919701599982"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="sticky-whatsapp"
+    aria-label="WhatsApp Sri Raksha Hospital"
+  >
+    💬
+  </a>
+</div>
