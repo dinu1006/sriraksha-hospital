@@ -54,6 +54,79 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* SERVICES SECTION */}
+<section className="services">
+  <h2 className="section-title">Our Medical Services</h2>
+
+  <div className="services-grid">
+
+    <div className="service-card">
+      <h3>General & Emergency Medicine</h3>
+      <ul>
+        <li>Diabetes</li>
+        <li>Hypertension</li>
+        <li>Thyroid Disorders</li>
+        <li>Poisoning Cases</li>
+        <li>Snake Bite & Scorpion Sting</li>
+      </ul>
+    </div>
+
+    <div className="service-card">
+      <h3>Respiratory Care</h3>
+      <ul>
+        <li>Asthma</li>
+        <li>COPD</li>
+        <li>Tuberculosis</li>
+        <li>Pleural Effusion</li>
+        <li>Pneumonia</li>
+      </ul>
+    </div>
+
+    <div className="service-card">
+      <h3>Kidney & Critical Care</h3>
+      <ul>
+        <li>AKI (Acute Kidney Injury)</li>
+        <li>CKD</li>
+        <li>Kidney Related Issues</li>
+      </ul>
+    </div>
+
+    <div className="service-card">
+      <h3>Cardiac & Neuro Care</h3>
+      <ul>
+        <li>Chest Pain</li>
+        <li>Myocardial Infarction</li>
+        <li>Stroke / CVA</li>
+        <li>Paralysis</li>
+      </ul>
+    </div>
+
+    <div className="service-card">
+      <h3>Maternity & Gynecology</h3>
+      <ul>
+        <li>Infertility</li>
+        <li>PCOS</li>
+        <li>Endometriosis</li>
+        <li>Normal Delivery & VBAC</li>
+        <li>LSCS & High Risk Pregnancy</li>
+        <li>Preeclampsia & Eclampsia</li>
+      </ul>
+    </div>
+
+    <div className="service-card">
+      <h3>Gynec Procedures & Infections</h3>
+      <ul>
+        <li>Tubectomy</li>
+        <li>Hysterectomy</li>
+        <li>NDVH</li>
+        <li>White Discharge Issues</li>
+        <li>Candidiasis</li>
+        <li>Cervicitis</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
       {/* ABOUT */}
       <section id="about" className="section">
