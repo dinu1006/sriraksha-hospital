@@ -71,7 +71,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= SERVICES (ONLY ONCE) ================= */}
+      {/* ================= SERVICES ================= */}
       <section id="services" className="services">
         <h2 className="section-title">Our Medical Services</h2>
 
@@ -143,7 +143,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ================= CALL TO ACTION ================= */}
+      {/* ================= CTA ================= */}
       <section className="cta-section">
         <h2>Need Medical Assistance?</h2>
         <p>Call us now for appointments and emergency care</p>
@@ -151,26 +151,19 @@ export default function HomePage() {
           📞 +91 97015 99982
         </a>
       </section>
+
+      {/* ================= STICKY BUTTONS ================= */}
+      <div className="sticky-buttons">
+        <a href="tel:+919701599982" className="sticky-call">📞</a>
+        <a
+          href="https://wa.me/919701599982"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sticky-whatsapp"
+        >
+          💬
+        </a>
+      </div>
     </>
   );
 }
-{/* ================= STICKY BUTTONS ================= */}
-<div className="sticky-buttons">
-  <a
-    href="tel:+919701599982"
-    className="sticky-call"
-    aria-label="Call Sri Raksha Hospital"
-  >
-    📞
-  </a>
-
-  <a
-    href="https://wa.me/919701599982"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="sticky-whatsapp"
-    aria-label="WhatsApp Sri Raksha Hospital"
-  >
-    💬
-  </a>
-</div>
