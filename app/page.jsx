@@ -19,9 +19,10 @@ export default function Home() {
 
       <section>
         <h3 className="section-title">About Sri Raksha Hospital</h3>
-        <p>
-          Sri Raksha Hospital provides ethical, affordable, and advanced
-          healthcare with modern infrastructure and experienced doctors.
+        <p style={{ textAlign: "center", maxWidth: 900, margin: "auto" }}>
+          Sri Raksha Hospital is committed to delivering ethical, affordable,
+          and advanced healthcare with modern infrastructure and experienced
+          doctors.
         </p>
       </section>
 
@@ -33,6 +34,7 @@ export default function Home() {
           <div className="card">Gynecology</div>
           <div className="card">Pediatrics</div>
           <div className="card">Emergency Care</div>
+          <div className="card">Diagnostics</div>
         </div>
       </section>
 
@@ -40,18 +42,24 @@ export default function Home() {
         <h3 className="section-title">Our Doctors</h3>
         <div className="cards">
           <div className="card">
-            <strong>Dr. Kavati Vijay</strong><br />
-            MD – General Medicine, Diabetologist
+            <strong>Dr. Kavati Vijay</strong>
+            <br />
+            MD – General Medicine
+            <br />
+            Diabetologist
           </div>
           <div className="card">
-            <strong>Dr. Divya Chandra</strong><br />
-            MS OBG – Gynecology & Infertility
+            <strong>Dr. Divya Chandra</strong>
+            <br />
+            MS – Obstetrics & Gynecology
+            <br />
+            Infertility Specialist
           </div>
         </div>
       </section>
 
       <footer>
-        © 2025 Sri Raksha Hospital
+        © 2025 Sri Raksha Hospital. All Rights Reserved.
       </footer>
     </>
   );
