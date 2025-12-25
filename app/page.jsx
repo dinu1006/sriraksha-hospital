@@ -1,90 +1,122 @@
-export default function HomePage() {
+export default function Home() {
   return (
     <>
+      {/* HEADER */}
+      <header>
+        <h1>Sri Raksha Hospital</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#doctors">Doctors</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
       {/* HERO */}
-      <section className="hero">
-        <div className="hero-overlay">
-          <div className="hero-inner">
-            <h1>Sri Raksha Hospital</h1>
-            <p className="hero-tagline">
-              Ethical • Affordable • Advanced Healthcare
-            </p>
-            <p className="hero-sub">
-              Comprehensive medical care with experienced doctors and modern facilities.
-            </p>
-            <div className="hero-buttons">
-              <a href="#services" className="btn primary">View Services</a>
-              <a href="tel:+919701599982" className="btn secondary">
-                Call +91 97015 99982
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="hero">
+        <h2>Advanced Healthcare with Compassion</h2>
+        <p>
+          Ethical, affordable and advanced healthcare with experienced doctors
+          and modern infrastructure.
+        </p>
+        <button>Book Appointment</button>
+      </div>
 
-      {/* WHY */}
-      <section>
-        <div className="why-container">
-          <div className="why-image">
-            <img src="/hospital.jpg" alt="Sri Raksha Hospital" />
-          </div>
-          <div className="why-content">
-            <h2>Why Sri Raksha Hospital</h2>
-            <p>
-              Sri Raksha Hospital provides ethical, affordable and quality healthcare
-              with a patient-first approach.
-            </p>
+      {/* SERVICES */}
+      <section id="services">
+        <h2>Our Medical Services</h2>
+        <div className="services">
+
+          <div className="service-card">
+            <h3>General Medicine</h3>
             <ul>
-              <li>✔ 24/7 Emergency Care</li>
-              <li>✔ Experienced Medical Team</li>
-              <li>✔ Modern Facilities</li>
-              <li>✔ Personalized Treatment</li>
+              <li>Diabetes</li>
+              <li>Hypertension</li>
+              <li>Thyroid Disorders</li>
+              <li>Poisoning Cases</li>
+              <li>Snake Bite & Scorpion Sting</li>
             </ul>
-            <a href="tel:+919701599982" className="why-btn">Call Now</a>
           </div>
-        </div>
-      </section>
 
-      {/* TRUST STRIP */}
-      <section className="trust-strip">
-        <div className="trust-container">
-          <div className="trust-item"><h3>24×7</h3><p>Emergency</p></div>
-          <div className="trust-item"><h3>10,000+</h3><p>Patients</p></div>
-          <div className="trust-item"><h3>Expert</h3><p>Doctors</p></div>
-          <div className="trust-item"><h3>Modern</h3><p>Facilities</p></div>
+          <div className="service-card">
+            <h3>Respiratory Care</h3>
+            <ul>
+              <li>Asthma & COPD</li>
+              <li>Tuberculosis</li>
+              <li>Pneumonia</li>
+              <li>Pleural Effusion</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Kidney & Critical Care</h3>
+            <ul>
+              <li>AKI & CKD</li>
+              <li>Kidney Related Issues</li>
+              <li>Dialysis Support</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Cardiac & Neuro</h3>
+            <ul>
+              <li>Chest Pain</li>
+              <li>Myocardial Infarction</li>
+              <li>Stroke / CVA</li>
+              <li>Paralysis</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Maternity & Gynecology</h3>
+            <ul>
+              <li>Infertility & PCOS</li>
+              <li>Normal Delivery & VBAC</li>
+              <li>LSCS & High-Risk Pregnancy</li>
+              <li>Preeclampsia & Eclampsia</li>
+            </ul>
+          </div>
+
+          <div className="service-card">
+            <h3>Gynec Procedures</h3>
+            <ul>
+              <li>Hysterectomy</li>
+              <li>Tubectomy</li>
+              <li>NDVH</li>
+              <li>Candidiasis & Cervicitis</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
       {/* DOCTORS */}
-      <section className="doctors">
-        <h2 className="section-title">Our Doctors</h2>
+      <section id="doctors">
+        <h2>Our Doctors</h2>
+        <div className="doctors">
 
-        <div className="doctors-grid">
           <div className="doctor-card">
-            <img src="/doctors/doctor1.jpg" alt="Doctor" />
-            <div className="doctor-info">
-              <h3>Dr. NAME 1</h3>
-              <p>MD – General Medicine</p>
-            </div>
+            <img src="/doctors/vijay.jpg" alt="Dr Kavati Vijay" />
+            <h4>Dr. Kavati Vijay</h4>
+            <p>MD – General Medicine</p>
+            <p>Diabetologist</p>
           </div>
 
           <div className="doctor-card">
-            <img src="/doctors/doctor2.jpg" alt="Doctor" />
-            <div className="doctor-info">
-              <h3>Dr. NAME 2</h3>
-              <p>MS – Obstetrics & Gynecology</p>
-            </div>
+            <img src="/doctors/divya.jpg" alt="Dr Divya Chandra" />
+            <h4>Dr. Divya Chandra</h4>
+            <p>MS – Obstetrics & Gynecology</p>
+            <p>Infertility Specialist</p>
           </div>
+
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="cta-section">
-        <h2>Need Medical Assistance?</h2>
-        <a href="tel:+919701599982" className="cta-btn">
-          📞 +91 97015 99982
-        </a>
-      </section>
+      {/* FOOTER */}
+      <footer id="contact">
+        <p>📞 +91 97015 99982</p>
+        <p>© 2025 Sri Raksha Hospital. All Rights Reserved.</p>
+      </footer>
     </>
   );
 }
