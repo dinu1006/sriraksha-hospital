@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sri Raksha Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f9ff;
+      text-align: center;
+    }
+    header {
+      background: #0b5ed7;
+      color: white;
+      padding: 40px 20px;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sri Raksha Hospital</h1>
+  <p>Caring for Life, Caring for You</p>
+</header>
+
+<section>
+  <h2>Welcome</h2>
+  <p>This website is successfully deployed on Vercel.</p>
+  <p>If you see this page, everything is WORKING ✅</p>
+</section>
+
+<footer>
+  <p>© 2025 Sri Raksha Hospital</p>
+</footer>
+
+</body>
+</html>
