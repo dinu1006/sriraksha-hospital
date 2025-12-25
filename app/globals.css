@@ -201,3 +201,60 @@ section:not(.hero) {
     font-size: 36px;
   }
 }
+/* ================= SMOOTH FLOATING & MOTION ================= */
+
+/* Parallax Hero */
+.hero {
+  background-attachment: fixed;
+}
+
+/* Floating depth */
+.dept-card,
+.service-card {
+  background: linear-gradient(180deg, #ffffff, #f4f8ff);
+  transform: translateY(0);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.dept-card:hover,
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.18);
+}
+
+/* Scroll animation base */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* When visible */
+[data-animate].show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section depth */
+.departments {
+  background: linear-gradient(to bottom, #f6f9fc, #ffffff);
+}
+
+.services {
+  background: linear-gradient(to bottom, #ffffff, #f3f7ff);
+}
+
+/* CTA depth */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top,
+    rgba(255,255,255,0.15),
+    transparent 70%);
+}
