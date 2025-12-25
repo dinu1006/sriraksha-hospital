@@ -60,6 +60,32 @@ export default function HomePage() {
 
   </div>
 </section>
+{/* ================= TRUST STRIP ================= */}
+<section className="trust-strip">
+  <div className="trust-container" data-animate>
+
+    <div className="trust-item">
+      <h3>24×7</h3>
+      <p>Emergency Care</p>
+    </div>
+
+    <div className="trust-item">
+      <h3>10,000+</h3>
+      <p>Patients Treated</p>
+    </div>
+
+    <div className="trust-item">
+      <h3>Experienced</h3>
+      <p>Medical Team</p>
+    </div>
+
+    <div className="trust-item">
+      <h3>Modern</h3>
+      <p>Facilities</p>
+    </div>
+
+  </div>
+</section>
 
       {/* ================= DEPARTMENTS ================= */}
       <section className="departments">
